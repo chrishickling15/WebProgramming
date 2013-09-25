@@ -1,0 +1,63 @@
+body 
+{
+	background-color: gray;
+}
+
+header
+{
+	background-color:rgb(27,27,27);
+	width:100%;
+	height: 100px;
+	overflow:hidden;	
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+#logo
+{
+	float: left;
+	margin-right:10%;
+	margin-top:1%;
+	clear:both;
+}
+
+h1
+{
+	color: rgb(176,23,31);
+}
+
+nav
+{
+	background-color: rgba(176,23,31,0.9);
+	width:100%;
+	height: 2em;
+	position:fixed;
+	overflow:hidden;
+	left:0;
+}
+
+nav > a
+{
+	
+}
+
+#main
+{
+	background-color: white;
+	width:50%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top:100px;
+	padding-top:2em;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+p
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align:justify;
+}
+
