@@ -1,9 +1,19 @@
-﻿<!DOCTYPE html>
+﻿<!--
+	File Name: index.html 
+	Author: Chris Hickling Image Slider credit to http://www.menucool.com 
+	Site Name: WebAssignment1
+	File Description: HTML script for home page with image slider.
+-->
+
+<!DOCTYPE html>
 <html>
+	
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<title>Home | CNH Designs and Development</title>
-		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	    <link href="stylesheets/js-image-slider.css" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/styles.css" rel="stylesheet" type="text/css" >
+	    <script src="javascript/js-image-slider.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -12,27 +22,49 @@
 				<img src="images/logo.png">
 			</div>
 			<h1>Chris N. Hickling | Designs and Development</h1>
+			<!--Social link icons for the header of each page-->
 			<div id="social">
-				<img src="">
-				<img src="">
+				<a href="mailto:hicklestyx@hotmail.com" target="_top"><img src="images/email-icon.png"></a>
+				<a href="http://www.twitter.com/hickling_chris"><img src="images/twitter-icon.png"></a>
+				<a href="https://plus.google.com/u/0/110552890086559306725/posts"><img src="images/gplus-icon.png"></a>
+				<a href="https://www.facebook.com/chris.hickling.503"><img src="Images/facebook-icon.png"></a>
 			</div>
 		</header>
-		<nav>
-			<a href="index.html">Home</a>
-		</nav>
+		<!--Navigation controls-->
+		<div id="navbar">
+			<nav>
+				<a id="active" href="index.html">Home</a>
+				<a href="about-me.html">About Me</a>
+				<a href="projects.html">Projects</a>
+				<a href="services.html">Services</a>					
+				<a href="github.html">GitHub</a>
+				<a href="contact-me.html">Contact Me</a>						
+			</nav>
+		</div>
 		<div id="main">
 			<div id="heading">
-				<h2>Home</h2>
+				<h2>I Speak <i>Your</i> Language</h2>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices justo metus, at adipiscing velit ultrices et. Integer consequat bibendum est, ut facilisis velit consectetur sed. Duis eget varius leo. Duis convallis sem quis risus malesuada molestie. Curabitur congue ligula in sapien tincidunt dictum. Vestibulum quis dui quam. Integer posuere justo enim, sit amet facilisis massa lacinia ac. Maecenas risus est, consequat ac pharetra ac, fermentum nec orci. Proin cursus tellus eu scelerisque laoreet. Maecenas dapibus varius dui non eleifend. Donec in lobortis arcu, non tempus arcu. Nunc eu nulla vitae nulla eleifend aliquet sit amet id mi. Sed vehicula neque quis erat condimentum, at interdum magna bibendum. Praesent malesuada dui eget ante feugiat lobortis.</p>
-			<p>Fusce sem orci, facilisis a odio vitae, facilisis pretium urna. Maecenas ut libero imperdiet, semper nisi sollicitudin, rhoncus ligula. Suspendisse volutpat interdum dolor. Nunc mollis risus id fringilla auctor. Sed sapien augue, sodales vitae neque ut, pharetra facilisis velit. Aenean consectetur tellus sit amet sapien sodales gravida. Sed id bibendum ante. Nam nec dapibus erat. Ut orci mi, faucibus sit amet tellus vitae, tempor lobortis libero. Integer in malesuada ipsum. Pellentesque tempus cursus est. Quisque et vehicula ligula.</p>
-			<p>Suspendisse semper dapibus dolor, a faucibus mauris volutpat vel. In et ligula sapien. Proin id imperdiet ipsum. Duis at porta felis. Sed vestibulum id enim at feugiat. Ut dictum vehicula massa, aliquet condimentum urna pharetra quis. Nam ac quam ut tortor tincidunt elementum.</p>
-			<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Morbi eget tincidunt diam. Curabitur ornare semper lorem eu pharetra. Sed condimentum mi et nisi molestie convallis. Donec hendrerit, tortor nec dignissim viverra, neque orci commodo turpis, et vulputate tortor massa eu nulla. Ut tempor, mauris quis fermentum vulputate, enim lectus feugiat mi, ac vestibulum ipsum velit vitae ante. Phasellus ac diam leo. Sed eros enim, aliquam non leo sit amet, viverra sodales risus. Proin in consequat diam.</p>
-			<p>Nunc molestie risus quis tellus laoreet, pulvinar aliquam eros tincidunt. Aenean egestas velit eu ligula rhoncus vestibulum. Quisque auctor turpis eget tellus laoreet, vitae dictum magna rutrum. Mauris interdum dignissim nisl, eget congue purus molestie sed. Quisque a orci venenatis, consectetur magna nec, egestas eros. In eget nisl nec nulla lobortis imperdiet id quis lacus. Phasellus tincidunt, nisi quis tempus sodales, est enim semper tellus, in convallis libero ante sed felis. </p>
+			<!--Menucool JavaScript Image Slider v2013.8.27. Copyright www.menucool.com-->
+ 			<div id="slider"> 
+		 		<img src="images/logo-black.jpg" alt="CNH Designs and Development" /> 
+		 		<img src="images/app-dev.png" alt="Wireframes to Functional" /> 
+		 		<a href="http://www.menucool.com"><img src="images/menucool.jpg" alt="Slider Courtesy of Menucool" /></a> 
+			 	<img src="images/card.PNG" alt="Simple Design" /> 
+			 	<img src="images/arduino.jpg" alt="Working With Arduino" /> 
+		 	</div>
+		 	
+			<p>CNH Designs and Development is committed to delivering quality, user-friendly, functional applications that fulfill all of our clients' needs. <br/><br/>I, Chris Hickling, personally assures that CNH
+				<ul>
+					<li>- Takes care, takes pride, and revels in developing applications designed for functionality and ease of use</li>
+					<li>- Allows for ample flexibility and customization - from elegant simplicity to ornate complexity</li>
+					<li>- Provides the tools for open editing, if desired</li>
+				</ul>			
+			</p>
 		</div>
 		<footer>
 			<div id="copyright">
-				
+				Copyright 2013 by CNH Designs and Development
 			</div>
 		</footer>
 	</body>

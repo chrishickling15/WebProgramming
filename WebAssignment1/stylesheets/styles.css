@@ -1,4 +1,11 @@
-body 
+/*
+	File Name: styles.css 
+	Author: Chris Hickling 
+	Site Name: WebAssignment1
+	File Description: CSS script for all pages on the site.
+*/
+
+body
 {
 	background-color: gray;
 }
@@ -12,9 +19,10 @@ header
 	position: fixed;
 	top:0;
 	left:0;
+	z-index:10;
 }
 
-#logo
+header > #logo
 {
 	float: left;
 	margin-right:10%;
@@ -22,12 +30,28 @@ header
 	clear:both;
 }
 
+header > #social
+{
+	margin-top:1%;
+	position:fixed;
+	top:0;
+	right:0;
+}
+
+#social > a > img
+{
+	width: 32px;
+	margin-left:5px;
+	margin-right:5px;
+	float:right;
+}
+
 h1
 {
 	color: rgb(176,23,31);
 }
 
-nav
+#navbar
 {
 	background-color: rgba(176,23,31,0.9);
 	width:100%;
@@ -35,23 +59,107 @@ nav
 	position:fixed;
 	overflow:hidden;
 	left:0;
+	z-index:10;
+}
+
+nav
+{
+	display:block;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#active
+{
+	background-color:rgb(27,27,27);
+	color:rgb(176,23,31);
 }
 
 nav > a
 {
-	
+	font-size: 1.25em;
+	padding-top:0.35em;
+	padding-bottom:0.35em;
+	padding-left:4%;
+	padding-right:4%;
+}
+
+nav > a:link
+{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+
+nav > a:visited
+{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+
+nav > a:hover
+{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	background-color:rgb(176,23,31);
 }
 
 #main
 {
 	background-color: white;
 	width:50%;
+	min-height:551px;
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-top:100px;
+	margin-bottom:30px;
 	padding-top:2em;
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+h2
+{
+	display:block;
+	width:100%;
+	border-bottom-color: gray;
+	border-bottom-style: solid;
+	border-bottom-width:1px;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+li > a > img
+{
+	width:36px;
+	margin-right:10px;
+}
+
+#headshot
+{
+	width:25%;
+	float:right;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+iframe
+{
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	z-index: 9;
+}
+
+#rapid-app
+{
+	width:100%;
 }
 
 p
@@ -61,3 +169,25 @@ p
 	text-align:justify;
 }
 
+footer 
+{
+	float:left;
+	bottom:0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: black;
+	border-top-color: rgb(176,23,31);
+	border-top-style: solid;
+	border-top-width: 2px;
+}
+
+#copyright
+{
+
+	width:100%;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	color:#FFFFFF;
+}
